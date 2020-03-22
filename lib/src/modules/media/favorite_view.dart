@@ -55,7 +55,7 @@ class _FavoritePageState extends State<FavoritePage>
               backgroundColor: HexColor("#FE3C72"),
             ),
             body: Center(
-              child: Text("Không có danh sách yêu thích"),
+              child: Text("Favorites list have no data."),
             ),
           ),
         );

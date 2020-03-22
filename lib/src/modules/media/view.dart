@@ -38,7 +38,7 @@ class _MediaPageState extends State<MediaPage> implements MediaPageContract {
       padding: EdgeInsets.only(left: 16.0, right: 16.0),
       child: Center(
         child: Text(
-          "Lỗi kết nối mạng, vui lòng mở kết nối mạng hoặc thử mở lại trang",
+          "Internet is no connection. Please try again.",
           textScaleFactor: 2.0,
           textAlign: TextAlign.center,
         ),
@@ -67,6 +67,9 @@ class _MediaPageState extends State<MediaPage> implements MediaPageContract {
           )
         : NoNetworkConnected;
 
+    /**
+    * Show detail card 
+    */
     Widget cardControl = Card(
       color: Colors.white,
       child: Column(

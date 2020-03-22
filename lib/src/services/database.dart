@@ -16,13 +16,7 @@ class DatabaseHelper {
     return _instance;
   }
 
-  Future<Database> get db async {
-    if (_db != null) {
-      return _db;
-    }
-    _db = await initDb();
-    return _db;
-  }
+  Future<Database> get db async => _db = (_db != null) ? _db : await initDb();
 
   initDb() async {
     io.Directory appDirectory = await getApplicationDocumentsDirectory();

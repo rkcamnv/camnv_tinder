@@ -23,6 +23,6 @@ class Personal {
   }
 
   toJsonString() {
-    return '{"title": "${title}", "first": "${first}", "last": "${last}"}';
+    return '{"title": "$title", "first": "$first", "last": "$last"}';
   }
 }

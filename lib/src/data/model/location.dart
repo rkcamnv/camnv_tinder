@@ -26,6 +26,6 @@ class Location {
   }
 
   toJsonString() {
-    return '{ "street": "${street}", "city": "${city}", "state": "${state}", "zip": "${zip}"}';
+    return '{ "street": "$street", "city": "$city", "state": "$state", "zip": "$zip"}';
   }
 }
